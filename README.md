@@ -1,6 +1,6 @@
 # Learn JavaScript
 
-## Data Types
+## Data (Primitive) Types
 1. Number
 2. String
 3. Boolean
@@ -28,6 +28,11 @@
 - considered a number data type but not a number
 
 ### 2. String
+- may use " " or ' '
+
+#### Indicies
+- use [ ] to access a character within the string
+- first character starts at 0
 
 ### 3. Boolean
 
@@ -53,4 +58,12 @@
 ## Syntaxes
 - type of - shows the type of the thing after this function
 - let x = y; - create a variable x with the value of y
-- const x = y;
+- const x = y; - create a constant that cannot be changed
+
+### Methods
+- variable.length - checks the length of a string
+- variable.toUpperCase() - all characters in the string become upper casing
+- variable.toLowerCase() - all characters in the string become lower casing
+- variable.trim() - removes the space in the string
+- variable.indexOf('x') - find the index of first matching character, if the character doesn't exist, return -1
+- variable.slice() - removes the characters before index, negative value works backwards, two values can be used to form a bracket
