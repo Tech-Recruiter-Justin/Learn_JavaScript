@@ -81,3 +81,8 @@
 - variable.replace('what to replace','what to replace with') - replaces the first matching instance
 - variable.repeat(x) - creates a new variable that repeats the original variable x times
 
+### Math Object
+- Math.method are properties and methods that help to calculate things, comes with JavaScript by default
+- Math.floor() - chopping off at a certain decimal
+- Math.random() - generates a random number from 0-1 with random number of decimal places
+    - No default way of generating a random integer so must use another method to create a random integer i.e. floor
