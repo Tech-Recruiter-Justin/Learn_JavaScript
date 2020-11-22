@@ -1,5 +1,27 @@
 # Learn JavaScript
 
+## Variables
+- holds a value which can be altered, used, and referred to
+- formulas only create a snapshot of the results of variables at that instance, the variables will not be linked!!!!
+- "+= -= *= /= %= ++ --"
+
+### Best Practices for Naming Variables
+- no spacing
+- no snake casing i.e. today_date
+- use camel casing i.e. todayDate
+    - note that the first word starts with lower casing
+- use isSomething for boolean variables
+
+### Operators
+- "+ - * / % **"
+- % is used for finding the remainder
+- ** to the power of
+
+#### Comparison Operators
+- "> < >= <= == != === !==" returns a boolean whether the statement is ture or fales, can also be used on strings (based on unicode)
+- == != is not very reliable as it converts different data types to the same before comparing
+- === !== checks the data types as well as the value
+
 ## Data (Primitive) Types
 1. Number
 2. String
@@ -18,11 +40,6 @@
 #### Constant
 - const
 - use when we want an unchangable number
-
-#### Operators
-- "+ - * / % **"
-- % is used for finding the remainder
-- ** to the power of
 
 #### NaN (Not a Number)
 - considered a number data type but not a number
@@ -53,18 +70,6 @@
 - variables that do not have an assigned value
 - let variable;
 - JavaScript way of saying "I don't know"
-
-## Variables
-- holds a value which can be altered, used, and referred to
-- formulas only create a snapshot of the results of variables at that instance, the variables will not be linked!!!!
-- "+= -= *= /= %= ++ --"
-
-### Best Practices for Naming Variables
-- no spacing
-- no snake casing i.e. today_date
-- use camel casing i.e. todayDate
-    - note that the first word starts with lower casing
-- use isSomething for boolean variables
 
 ## Syntaxes
 - type of - shows the type of the thing after this function
