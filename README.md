@@ -34,14 +34,25 @@
 - use [ ] to access a character within the string
 - first character starts at 0
 
+#### String Template
+- use ` back-ticks to bracket string templates
+- use ${ } in a string to specify values evaluated as JavaScript NOT a string, methods can be used inside it
+
 ### 3. Boolean
 
 #### True/ False
 - JavaScript allows variables to switch data types i.e. from numbers to boolean
 
 ### 4. Null
+- "intentional absence of any value"
+- must be assigned
+- let variable = null;
+- JavaScript way of saying "there is nothing"
 
 ### 5. Undefined
+- variables that do not have an assigned value
+- let variable;
+- JavaScript way of saying "I don't know"
 
 ## Variables
 - holds a value which can be altered, used, and referred to
@@ -67,3 +78,6 @@
 - variable.trim() - removes the space in the string
 - variable.indexOf('x') - find the index of first matching character, if the character doesn't exist, return -1
 - variable.slice() - removes the characters before index, negative value works backwards, two values can be used to form a bracket
+- variable.replace('what to replace','what to replace with') - replaces the first matching instance
+- variable.repeat(x) - creates a new variable that repeats the original variable x times
+
