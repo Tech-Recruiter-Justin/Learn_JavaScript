@@ -71,6 +71,8 @@
 - let variable;
 - JavaScript way of saying "I don't know"
 
+## Array
+
 ## Syntaxes
 - type of - shows the type of the thing after this function
 - let x = y; - create a variable x with the value of y
@@ -85,6 +87,11 @@
 - variable.slice() - removes the characters before index, negative value works backwards, two values can be used to form a bracket
 - variable.replace('what to replace','what to replace with') - replaces the first matching instance
 - variable.repeat(x) - creates a new variable that repeats the original variable x times
+- array.push() - add an item to the end of an array
+- array.unshift() - add an item to the beginning of an array
+- array.pop() - remove an item at the end of an array
+- array.shift() - remove an item from the the beginning of an array
+- array1.concat(array2) - add array2 to the end of array1
 
 ### Math Object
 - Math.method are properties and methods that help to calculate things, comes with JavaScript by default
