@@ -77,6 +77,14 @@
 ## Array
 - const arrays' CONTENTS can be changed an altered, but it's pointer cannot be changed
     - hence, const is quite often used for arrays
+- arrays can be nested inside arrays
+
+## Object Literals
+- we can set key-value pairs within an object
+- arrays and objects can be nested within objects
+- to access objects, use ["key"] after the object variable, or use object.key
+- all keys are converted to stings i.e. numbers or symbols will become strings
+- [number] will also be convert to ["number"] automatically
 
 ## Syntaxes
 - type of x - shows the type of variable x
