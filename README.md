@@ -21,6 +21,9 @@
 - "> < >= <= == != === !==" returns a boolean whether the statement is ture or fales, can also be used on strings (based on unicode)
 - == != is not very reliable as it converts different data types to the same before comparing
 - === !== checks the data types as well as the value
+- when used for arrays, the operators actually compares the amount of memory allocated to the array (a reference is assigned to each array)
+    - hence, array1 will always be different from array2
+    - unless two variables are set to reference to the same array (pointing)
 
 ## Data (Primitive) Types
 1. Number
@@ -72,6 +75,8 @@
 - JavaScript way of saying "I don't know"
 
 ## Array
+- const arrays' CONTENTS can be changed an altered, but it's pointer cannot be changed
+    - hence, const is quite often used for arrays
 
 ## Syntaxes
 - type of x - shows the type of variable x
@@ -97,6 +102,7 @@
 - array.reverse() - reverse the whole array
 - array.slice() - get a slice of the array based on the index range input
 - array.splice(start index, number of items to delete, item to insert)
+- array.sort() - by default covert everything into strings and sort based on UTF16 (without perentheses)
 
 ### Math Object
 - Math.method are properties and methods that help to calculate things, comes with JavaScript by default
