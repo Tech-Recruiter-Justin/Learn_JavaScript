@@ -85,6 +85,7 @@
 - to access objects, use ["key"] after the object variable, or use object.key
 - all keys are converted to stings i.e. numbers or symbols will become strings
 - [number] will also be convert to ["number"] automatically
+- code can be run inside [] for dynamic keys i.e. another variable
 
 ## Syntaxes
 - type of x - shows the type of variable x
