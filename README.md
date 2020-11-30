@@ -74,7 +74,7 @@
 ## Array
 
 ## Syntaxes
-- type of - shows the type of the thing after this function
+- type of x - shows the type of variable x
 - let x = y; - create a variable x with the value of y
 - const x = y; - create a constant that cannot be changed
 
@@ -92,6 +92,11 @@
 - array.pop() - remove an item at the end of an array
 - array.shift() - remove an item from the the beginning of an array
 - array1.concat(array2) - add array2 to the end of array1
+- array.includes() - check whether the array includes the item
+- array.indexOf() - check the index of item, reuturns -1 if item doesn't exist
+- array.reverse() - reverse the whole array
+- array.slice() - get a slice of the array based on the index range input
+- array.splice(start index, number of items to delete, item to insert)
 
 ### Math Object
 - Math.method are properties and methods that help to calculate things, comes with JavaScript by default
