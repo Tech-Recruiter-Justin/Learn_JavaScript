@@ -87,6 +87,22 @@
 - [number] will also be convert to ["number"] automatically
 - code can be run inside [] for dynamic keys i.e. another variable
 
+## Loops
+1. For Loop
+2. While Loop
+3. For ... of Loop
+4. For ... in Loop
+
+### 1. For Loop
+### 2. While Loop
+### 3. For ... of Loop
+### 4. For ... in Loop
+
+
+
+
+
+
 ## Syntaxes
 - type of x - shows the type of variable x
 - let x = y; - create a variable x with the value of y
