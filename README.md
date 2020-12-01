@@ -88,22 +88,21 @@
 - code can be run inside [] for dynamic keys i.e. another variable
 
 ## Loops
-1. For Loop
-2. While Loop
-3. For ... of Loop
-4. For ... in Loop
+- used to repeat code
+- can also be used for accessing arrays/ objects
 
 ### 1. For Loop
 ### 2. While Loop
 ### 3. For ... of Loop
 ### 4. For ... in Loop
-
-
-
+### 5. Infinite Loop
+- the loop never stops and uses up all the memory available
 
 
 
 ## Syntaxes
+
+### General
 - type of x - shows the type of variable x
 - let x = y; - create a variable x with the value of y
 - const x = y; - create a constant that cannot be changed
@@ -134,3 +133,9 @@
 - Math.floor() - chopping off at a certain decimal
 - Math.random() - generates a random number from 0-1 with random number of decimal places
     - No default way of generating a random integer so must use another method to create a random integer i.e. floor
+
+### For Loop
+for (let [initialExpression];[condition];[incrementExpression]) {
+    action to repeat
+}
+
