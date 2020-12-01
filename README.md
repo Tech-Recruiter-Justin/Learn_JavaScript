@@ -92,13 +92,15 @@
 - can also be used for accessing arrays/ objects
 
 ### 1. For Loop
+- for loop inside for lop will run a full cycle whilst the outer cycle runs each time
+- if ... break; word can be used to create a loop exception
+
+
 ### 2. While Loop
 ### 3. For ... of Loop
 ### 4. For ... in Loop
 ### 5. Infinite Loop
 - the loop never stops and uses up all the memory available
-
-
 
 ## Syntaxes
 
