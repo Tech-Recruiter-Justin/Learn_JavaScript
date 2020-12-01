@@ -95,9 +95,12 @@
 - for loop inside for lop will run a full cycle whilst the outer cycle runs each time
 - if ... break; word can be used to create a loop exception
 
-
 ### 2. While Loop
+- used when we don't know how many times to repeat
+
 ### 3. For ... of Loop
+- used to iterate content of array or iterable objects i.e. strings BUT Object Literals are NOT iterable objects
+
 ### 4. For ... in Loop
 ### 5. Infinite Loop
 - the loop never stops and uses up all the memory available
@@ -129,6 +132,8 @@
 - array.slice() - get a slice of the array based on the index range input
 - array.splice(start index, number of items to delete, item to insert)
 - array.sort() - by default covert everything into strings and sort based on UTF16 (without perentheses)
+- object.keys(object) - creates an array of keys in that object
+- object.value(object) - creates an array of values in that object
 
 ### Math Object
 - Math.method are properties and methods that help to calculate things, comes with JavaScript by default
