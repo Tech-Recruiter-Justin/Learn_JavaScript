@@ -117,8 +117,24 @@
 - console.log in functions cannot be captured, we need a concrete output i.e. return
 - also, stops the operation
 
+### Function Expressions
+- we can store a function within a variable
+- functions are just treated like other values
+
+### Higher Order Functions
+- functions that accept other functions as arguement
+- functions that return functions
+
+## Scoping
+
 ### Function Scope
-- for example variables defined within a function is only accessible within that function
+- variables defined within a function is only accessible within that function
+
+### Block Scope
+- variables defined within a block {} is only accessible within that block
+
+### Lexical Scope
+- nested functions have access to its parent function's elements, but not vice versa 
 
 ## Syntaxes
 
@@ -127,7 +143,7 @@
 - let x = y; - create a variable x with the value of y
 - const x = y; - create a constant that cannot be changed
 
-### Methods
+### Methods (functions within an object)
 - variable.length - checks the length of a string
 - variable.toUpperCase() - all characters in the string become upper casing
 - variable.toLowerCase() - all characters in the string become lower casing
