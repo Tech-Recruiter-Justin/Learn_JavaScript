@@ -102,8 +102,23 @@
 - used to iterate content of array or iterable objects i.e. strings BUT Object Literals are NOT iterable objects
 
 ### 4. For ... in Loop
-### 5. Infinite Loop
+
+### Infinite Loop
 - the loop never stops and uses up all the memory available
+
+## Functions
+- reusable modular code
+
+### Arguments
+- inputs for functions which generates different outputs
+- every method is a function
+
+### Return
+- console.log in functions cannot be captured, we need a concrete output i.e. return
+- also, stops the operation
+
+### Function Scope
+- for example variables defined within a function is only accessible within that function
 
 ## Syntaxes
 
@@ -144,5 +159,10 @@
 ### For Loop
 for (let [initialExpression];[condition];[incrementExpression]) {
     action to repeat
+}
+
+### Define Functions
+function name(variable) {
+    console.log(variable);
 }
 
