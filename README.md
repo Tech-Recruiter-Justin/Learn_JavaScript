@@ -58,7 +58,7 @@
 - use ` back-ticks to bracket string templates
 - use ${ } in a string to specify values evaluated as JavaScript NOT a string, methods can be used inside it
 
-### 3. Boolean
+#### 3. Boolean
 
 #### True/ False
 - JavaScript allows variables to switch data types i.e. from numbers to boolean
@@ -142,6 +142,17 @@
 
 ## Set interval
 - repeat the function with intervals in between
+
+## New JavaScript Functions
+
+### Default Params
+
+```javascript
+//example, the default print out out be "1"
+function (x = 1){
+	console.log(x);
+}
+```
 
 ## Syntaxes
 
