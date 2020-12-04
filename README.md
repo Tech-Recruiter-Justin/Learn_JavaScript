@@ -136,6 +136,13 @@
 ### Lexical Scope
 - nested functions have access to its parent function's elements, but not vice versa 
 
+## Set Timeout
+- setTimeout(function, delay in ms);
+- the browser will wait the delay before calling the function
+
+## Set interval
+- repeat the function with intervals in between
+
 ## Syntaxes
 
 ### General
@@ -165,6 +172,9 @@
 - array.sort() - by default covert everything into strings and sort based on UTF16 (without perentheses)
 - object.keys(object) - creates an array of keys in that object
 - object.value(object) - creates an array of values in that object
+- array.filter(function) - creates an new array that fulfills the requirements in the function
+- array.some(function) - checks if any of the items in the array passes the function
+- array.every(function) - checks if all of the items in the array passes the fucntion
 
 ### Math Object
 - Math.method are properties and methods that help to calculate things, comes with JavaScript by default
@@ -182,3 +192,13 @@ function name(variable) {
     console.log(variable);
 }
 
+### Reduce Method
+variable.reduce((a, b) => total + price)
+
+#### Min/ Max
+variable.redice((min, price) => {
+    if (price < min){
+        return price;
+    }
+    return min;
+}
