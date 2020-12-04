@@ -150,15 +150,90 @@
 A quicker way compared to how default values are traditionally set
 
 ```javascript
-//example, the default print out out be "1"
-function (x = 1){
-	console.log(x);
-}
+//example: the default print out out be "1"
+print = (x = 1) => console.log(x); //creates a function named print
+print(); //1
 ```
 
 ### Spread
 
+#### Function Calls
 
+Spread can be used to make a single array become multiple arguements in a function
+
+```javascript
+//example: spreading values in an array to a max function
+const num = [3,7,12,8,33,123];
+Math.max(nums); //returns NaN as Math.max expects multiple arguments, not a single array
+Math.max(...nums); //123
+```
+
+#### Array Literals
+
+Spread can also be used to manipulate contents of arrays - copying, merging, adding etc.
+
+```javascript
+classA = ['Peter', 'Mary', 'Jill'];
+classB = ['Justin', 'Stephanie'];
+classC = [...classA, ...classB, 'Jason'];
+//classC = ['Peter', 'Mary', 'Jill', 'Justin', 'Stephanie', 'Jason'];
+```
+
+#### Object Literals
+
+Spread properties in object to form a new object, can also be used when copying an object
+
+```javascript
+const userA = {
+  id: '0001',
+  name: 'Justin Choi',
+  email: 'user.A@gmail.com'
+}
+const userB = {
+  id: '0002',
+  name: 'Stephanie Kwok',
+  email: 'user.B@gmail.com',
+  nickname: 'bubu'
+}
+const allData = {...userA, ...userB}; //when merged, if any of the properties are the same within objects, the later will overwrite the former
+```
+
+#### Rest Params
+
+. . . Can also be used to collect remaining function arguements to form an array
+
+```javascript
+raceResults = (gold, silver, ...bronze) =>{
+  console.log(`Gold award: ${gold}`);
+  console.log(`Silver award: ${silver}`);
+  console.log(`Gold award: ${bronze}`);
+  console.log(bronze);
+}
+raceResults('Justin', 'Leo', 'Ruby', 'Kotlin', 'Jupyter');
+//Gold award: Justin
+//Silver award: Leo
+//Gold award: Ruby,Kotlin,Jupyter
+//["Ruby", "Kotlin", "Jupyter"]
+```
+
+### Destructuring
+
+#### Arrays
+
+Putting array elements into individual variables
+
+```javascript
+const originalArray = ['Alpha', 'Beta', 'Charlie', 'Echo', 'Fox'];
+const [newA, newB, newC, ...newD] = originalArray;
+newA; //Alpha
+newB; //Beta
+newC; //Charlie
+newD; //['Echo', 'Fox']
+```
+
+#### Objects
+
+#### Params
 
 ## Syntaxes
 
