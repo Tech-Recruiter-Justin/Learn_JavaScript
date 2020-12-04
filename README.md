@@ -147,12 +147,18 @@
 
 ### Default Params
 
+A quicker way compared to how default values are traditionally set
+
 ```javascript
 //example, the default print out out be "1"
 function (x = 1){
 	console.log(x);
 }
 ```
+
+### Spread
+
+
 
 ## Syntaxes
 
