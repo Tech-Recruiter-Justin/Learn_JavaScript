@@ -257,8 +257,6 @@ movies.filter((movie) => movie.score >= 90)
 movies.filter(({ score }) => score >= 90) //same output but param destructured
 ```
 
-
-
 ## Syntaxes
 
 ### General
