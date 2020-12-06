@@ -233,7 +233,31 @@ newD; //['Echo', 'Fox']
 
 #### Objects
 
+Creating individual variables based on the the properties in the object
+
+```javascript
+const userA = {
+  id: '0001',
+  name: 'Justin Choi',
+  email: 'user.A@gmail.com'
+}
+const { name, id, email } = userA;
+name; //Justin Choi
+
+//changing the variable name whilst destructing
+const { id: userID, age = 25 } = userA; //same theory as default param
+userID; //0001
+age; //25
+```
+
 #### Params
+
+```javascript
+movies.filter((movie) => movie.score >= 90)
+movies.filter(({ score }) => score >= 90) //same output but param destructured
+```
+
+
 
 ## Syntaxes
 
