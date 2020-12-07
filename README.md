@@ -257,6 +257,11 @@ movies.filter((movie) => movie.score >= 90)
 movies.filter(({ score }) => score >= 90) //same output but param destructured
 ```
 
+## Document Object Model
+
+- JavaScript representation of a webpage
+- Objects that can be interacted via JavaScript
+
 ## Syntaxes
 
 ### General
