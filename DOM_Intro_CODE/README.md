@@ -4,12 +4,13 @@
 
 Singling certain elements of the document out
 
+### By ID
 
+```javascript
+const variable = document.getElementById('id');
+console.dir(variable); //shows the element selected as an object with a list of properties
+```
 
-### getElementById
+### By Tag
 
-
-
-### getElementByTag
-
-### getElementByClassName
+### By Class Name
