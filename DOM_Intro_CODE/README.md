@@ -70,8 +70,21 @@ variable.setAttribute('type', 'text'); //another way
 
 ### Style
 
+Changing CSS properties
+
 ```javascript 
 h1.style.color = 'green'; //setting CSS styles throught the DOM
 window.getComputedStyle(h1); //access the computed result of h1
+```
+
+### Class List
+
+- Class list CANNOT modify multiple elements' classList, so it is required to literate over the array
+
+```javascript
+const li = document.querySelectorAll('li');
+for (let list of li){
+	list.classList.toggle('highlight');
+}
 ```
 
