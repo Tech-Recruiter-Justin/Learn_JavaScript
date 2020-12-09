@@ -88,3 +88,42 @@ for (let list of li){
 }
 ```
 
+### Parent/ Child/ Sibling
+
+```javascript
+x.parentElement //select parent element
+x.children //select all children elements
+x.childElementCount //count how many children elements there are
+x.nextSibling
+x.previousSibling
+x.nextElementSibling
+x.previousElementSibling
+```
+
+### Append & Append Child
+
+```javascript
+document.parent.appendChild(newVariable); //adds the newVariable
+
+variable = document.createElement('h3');
+variable.innerText = "some thing you want to type"; //created h3 and added innerText
+
+p.append('Hi!'); //adds Hi! to the end of the p
+p.prepend('Hi!'); //adds Hi! to the begining of the p
+
+variable.insertAdjacentElement('position', h2)
+```
+
+### Remove
+
+```javascript
+//the longer way to do it
+const firstLi = document.querySelector('li');
+const ul = firstLi.parentElement;
+ul.removeChild(firstLi);
+
+ul.parentelement.removeChild(ul); //kind of janky old way
+
+thingToRemove.remove(); //new way to remove but doesn't work on IE
+```
+
