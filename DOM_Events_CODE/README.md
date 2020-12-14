@@ -31,3 +31,20 @@ function colorize(){
 }
 ```
 
+### Event Objects/ Kayboard Events
+
+- if we hold down a key, keydown fuction will keep executing after a certain delay
+
+```javascript
+input.addEvetnListener('keydown', function(evt) {
+	console.log("keydown"); //prints keydown when any key is pressed/ hold
+  console.log(evt.key); //prints the end result i.e. press left shift, prints "Shift"
+  console.log(evt.code); //prints the keyboard position i.e. prints "ShiftLeft"
+})
+input.addEvetnListener('keyup', function() {
+	console.log("keyup"); //prints when any key is released
+})
+```
+
+### 
+
