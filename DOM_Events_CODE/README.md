@@ -19,3 +19,15 @@ btn.addEventListener('click', function1, { once: true}); //the event listener is
 btn.addEventListener('click', function2);
 ```
 
+### This
+
+- to create a generic function that refers to whatever the event is happening on, we can use 'this' keyword
+
+```javascript
+//after selecting an element, whenever this function is called, event occurs on that element
+function colorize(){
+	this.style.backgroundColor = makeRandColor();
+	this.style.color = makeRandColor();
+}
+```
+
