@@ -67,3 +67,15 @@ input.addEventListener('input', function(e){
 })
 ```
 
+### Event Bubble
+
+- .stopPropagation(); can be used to stop event bubbling
+
+### Event Delegation
+
+```javascript
+showTweet.addEventListener('click', function (e){
+    e.target.nodeName === 'LI' && e.target.remove();
+});
+```
+

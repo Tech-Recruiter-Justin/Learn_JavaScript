@@ -17,3 +17,7 @@ const addTweet = (username, tweet) => {
     newTweet.append(` - ${tweet}`);
     showTweet.append(newTweet);
 }
+
+showTweet.addEventListener('click', function (e){
+    e.target.nodeName === 'LI' && e.target.remove();
+});
