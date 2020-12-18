@@ -10,7 +10,6 @@ tweetForm.addEventListener('submit', function (e){
 });
 
 const addTweet = (username, tweet) => {
-
     const newTweet = document.createElement('li');
     const bTag = document.createElement('b');
     bTag.append(username);

@@ -46,5 +46,24 @@ input.addEvetnListener('keyup', function() {
 })
 ```
 
-### 
+### Form Events/ PreventDefault
+
+- preventDefault in this case would stop the form from submitting and jumping to another page
+- the function is triggered when the form is submitted
+
+```javascript
+tweetForm.addEventListener('submit', function (e){
+    e.preventDefault();
+});
+```
+
+### Change Events
+
+- execute the function every time an input is recorded i.e. typing on the keyboard
+
+```javascript 
+input.addEventListener('input', function(e){
+    h1.innerText = input.value;
+})
+```
 
