@@ -46,12 +46,13 @@ db.collection.insertOne({element1: "X", element2: "Y"})
 db.collection.insert([{element1: "X", element2: "Y"}, {element1: "X", element2: "Y"}])
 ```
 
-## Show Data
+## Find Data
 
 ```javascript
 db.collection.find() // finds all documents in the collection
-db.collection.findOne() //shows the first result that matches the arguements
-db.collection.find({property: something}) // shows all results that fit the arguements 
+db.collection.findOne() // shows the first result that matches the arguements
+db.collection.find({property: something}) // shows all results that fit the arguements
+// for nested properties, use property.subprop
 ```
 
 ## Update Data
@@ -73,4 +74,17 @@ db.collection.deleteOne({criteria: x}) // delete the first item that matches cri
 db.collection.deleteMany({criteria: x}) // delete all that matches criteria
 db.collection.deleteMany({}) // delete everything in the collection
 ```
+
+## Query Operators
+
+### Comparison
+
+- $gt - greater than
+- $lt - less than
+- $in: ['criteria1', 'criteria2'] - search based on the items defined in the array
+- $nin: ['criteria1', 'criteria2'] - search based on the items NOT defined in the array
+
+
+
+# Mongoose
 
