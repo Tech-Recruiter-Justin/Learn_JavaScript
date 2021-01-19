@@ -88,3 +88,50 @@ db.collection.deleteMany({}) // delete everything in the collection
 
 # Mongoose
 
+## Quick Start
+
+```javascript
+// basic quick start
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/movieApp', {useNewUrlParser: true, useUnifiedTopology: true})
+    .then(()=>{
+        console.log("CONNECTION OPEN")
+    })
+    .catch(err =>{
+        console.log("ERROR")
+        console.log(err)
+    });
+```
+
+## Creating Schema
+
+```javaScript
+const movieSchema = new mongoose.Schema({
+    title: String,
+    year: Number,
+    score: Number,
+    rating: String
+})
+
+const Movie = mongoose.model('Movie', movieSchema);
+```
+
+## Saving
+
+```javascript
+// individual entries
+Movie.save()
+// multiple entries by insert method
+Movie.insertMany([
+  { movie1 },
+  { movie2 },
+])
+```
+
+## Find
+
+```javascript
+Movie.find({rating: 'PG'}).then(data => console.log(data))
+Movie.findById(6006e3755e1d894a1a966ad4)
+```
+
