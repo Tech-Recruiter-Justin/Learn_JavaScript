@@ -131,7 +131,27 @@ Movie.insertMany([
 ## Find
 
 ```javascript
+// find all data that matches the criteria
 Movie.find({rating: 'PG'}).then(data => console.log(data))
 Movie.findById(6006e3755e1d894a1a966ad4)
+```
+
+## Update
+
+```javascript
+// update and shows how many items are updated, data not shown
+Movie.updateOne({title: 'Harry Potter'}, {year: 2021}).then(res => console.log(res))
+Movie.updateMany({title: {$in: ['Harry Potter', 'DasBoat']}}, {score: 10}).then(res => console.log(res))
+// update and shows the new data
+Movie.findOneAndUpdate({title: 'Harry Potte'}, {score: 10}, {new: true}).then(m => console.log(m))
+```
+
+## Delete
+
+```javascript
+Movie.remove({title: 'Harry Potter'}).then(msg => console.log(msg))
+Movie.deleteOne({title: 'Harry Potter'}).then(msg => console.log(msg))
+// delete and show deleted documents
+Movie.findOneAndDelete({title: 'Harry Potter'}).then(m => console.log(m))
 ```
 
